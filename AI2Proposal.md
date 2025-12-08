@@ -19,4 +19,4 @@ The compressive strength of cement is a critical property that determines its su
 
 # Related Works:
 - [Cement Strength EDA and Prediction](https://www.kaggle.com/code/niteshyadav3103/cement-strength-eda-and-prediction)
-
+- [Concrete Compressive Strength Testing Using Python](https://www.kaggle.com/code/vivekgediya/concrete-compressive-strength-testing-using-python/notebook)

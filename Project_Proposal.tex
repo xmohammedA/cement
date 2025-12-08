@@ -1,0 +1,77 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\onehalfspacing
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Cement Strength Prediction}
+\rhead{\thepage}
+\cfoot{AI2 Project Proposal}
+
+\title{\textbf{Machine Learning for Concrete Compressive Strength Prediction:\\
+Hyperparameter Optimization using BOHB}}
+\author{Mohamed El-Saeed Zaky \\ Mohamed Khaled El-Zalook \\ Mohamed Ahmed Hanafy}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This project develops a machine learning system for predicting concrete compressive strength across SVM, Random Forest, AdaBoost, and XGBoost models.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+We will use ML algorithms to predict the compressive strength of cement, and try to find the best algorithm and best hyperparameters to get the best results.
+
+\section{Problem Definition}
+\label{sec:problem}
+
+\subsection{Background}
+The compressive strength of cement is a critical property that determines its suitability for various construction applications. Accurately predicting the compressive strength based on the composition and curing conditions can help in optimizing the mix design, reducing costs, and ensuring quality control in the production process.
+
+\subsection{Objective}
+\begin{enumerate}
+    \item Data Collection: Gather a comprehensive dataset containing various cement compositions, curing conditions, and their corresponding compressive strength values.
+
+	\item Data Preprocessing: Clean the dataset, handle missing values, and perform feature engineering to enhance the predictive power of the model.
+
+	\item Model Selection: Experiment with different machine learning algorithms to identify the most suitable model for this regression task.
+
+	\item Hyperparameter Tuning: Optimize the selected model's hyperparameters to improve its performance.
+\end{enumerate}
+
+\section{Related Works}
+\begin{itemize}
+		\item \href{https://www.kaggle.com/code/niteshyadav3103/cement-strength-eda-and-prediction}{Cement Strength EDA and Prediction}
+		\item \href{https://www.kaggle.com/code/vivekgediya/concrete-compressive-strength-testing-using-python/notebook}{Concrete Compressive Strength Testing Using Python}
+\end{itemize}
+
+\label{sec:references}
+
+\begin{thebibliography}{99}
+
+\bibitem{BOHB2018}
+		\href{https://arxiv.org/abs/1807.01774}{Stefan Falkner. et al. (2018). ``BOHB: Robust and Efficient Hyperparameter Optimization at Scale''. arXiv:1807.01774.}
+
+\bibitem{BOHBart}
+		\href{https://dzone.com/articles/bayesian-optimization-and-hyperband-bohb-hyperpara}{Sai Nikhilesh Kasturi. ``Bayesian Optimization and Hyperband (BOHB) Hyperparameter Tuning With an Example''.}
+\bibitem{XGBoost2023Guide}
+		\href{https://www.kaggle.com/code/prashant111/a-guide-on-xgboost-hyperparameters-tuning}{Prashant. ``A Guide on XGBoost Hyperparameters Tuning'' Article on Kaggle.}
+
+\bibitem{BayesOptNN2024}
+		\href{https://arxiv.org/abs/2410.21886}{Gabriele Onorato. (2024). ``Bayesian Optimization for Hyperparameters Tuning in Neural Networks''. arXiv:2410.21886.}
+
+\end{thebibliography}
+
+\end{document}
